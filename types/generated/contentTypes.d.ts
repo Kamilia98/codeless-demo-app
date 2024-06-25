@@ -793,7 +793,7 @@ export interface ApiFeatureFeature extends Schema.CollectionType {
   info: {
     singularName: 'feature';
     pluralName: 'features';
-    displayName: 'feature';
+    displayName: 'features';
     description: '';
   };
   options: {
@@ -827,7 +827,8 @@ export interface ApiPricingPricing extends Schema.CollectionType {
   info: {
     singularName: 'pricing';
     pluralName: 'pricings';
-    displayName: 'pricing';
+    displayName: 'pricings';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -859,7 +860,8 @@ export interface ApiServiceService extends Schema.CollectionType {
   info: {
     singularName: 'service';
     pluralName: 'services';
-    displayName: 'service';
+    displayName: 'services';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -869,7 +871,7 @@ export interface ApiServiceService extends Schema.CollectionType {
     description: Attribute.Text;
     img_link: Attribute.String;
     img: Attribute.Media<'images' | 'files' | 'videos' | 'audios', true>;
-    content: Attribute.JSON;
+    features: Attribute.JSON;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
